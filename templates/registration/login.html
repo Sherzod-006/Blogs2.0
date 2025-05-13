@@ -1,8 +1,7 @@
-{%extends 'base.html'%} {%block title%}ChatLine LogIn{%endblock title%} {%block
-content%}
+{%extends 'base.html'%} {%block content%}
 <h1>LogIn to ChatLine</h1>
 <form method="post">
   {% csrf_token %} {{ form.as_p }}
   <button type="submit">LogIn</button>
 </form>
-{%endblock content%}
+{%endblock%}
